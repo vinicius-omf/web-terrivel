@@ -1,0 +1,21 @@
+header{
+	margin:0 auto;
+	width:600px;
+}
+div{
+	margin:0 auto;
+	border:1px solid black;
+	width:600px;
+	padding: 10px;
+}
+label{
+	display: inline-block;;
+	width: 30%;
+}
+input{
+	width: 40%;
+}
+
+#enviar{
+	width: 20%;
+}

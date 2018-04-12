@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Formulario Post</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <form action="http://terrivel.herokuapp.com/monster" method="post">
+            <header><h2>Formulário Post:</h2></header>
+             <div id="informacoes_principais">
+                <p>
+                    <label>Número de pedras:</label>  <input type="number" min="0" value="1" name="num_pedras" required />
+                </p>
+                <p>
+                    <label>Tamanho das pedras:</label>  <input type="number" min="0" value="1" max="7" name="tam_pedras" required />
+                </p>
+                <p>
+                    <label>Nome do monstro:</label>  <input type="text" pattern="[a-zA-Z]+" name="nome" required />
+                </p>
+            </div>
+            <div id="informacoes_adicionais">
+                <p>
+                    <label>Cor do céu 1:</label>  <input type="color" name="corCeu1"  />
+                </p>
+                <p>
+                    <label>Cor do céu 2:</label>  <input type="color" name="corCeu2"  />
+                </p>
+                <p>
+                    <label>Tipo de pedras:</label> 
+
+                    <select name="tipo_pedras">
+                        <option value="marroada">Marroada</option>
+                        <option value="ametista">Ametista</option>
+                        <option value="topazio">Topazio</option>
+                        <option value="espinela">Espinela</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Pedras Sortidas</label> 
+                    <select name="tipo_pedras_sortidas">
+                        <option value="não">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input id="enviar" type="submit" value="Enviar" />
+                </p>
+            </div>
+        </form>
+
+    </body>
+</html>
